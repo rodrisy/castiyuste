@@ -1,0 +1,55 @@
+=================================================
+CASTIYUSTE.COM — SITIO WEB
+Creado en Abril 2026
+=================================================
+
+ESTRUCTURA DE ARCHIVOS
+-----------------------
+castiyuste/
+├── index.html              → Página principal (Home)
+├── sobre-mi.html           → Sobre mí
+├── mi-metodo.html          → Mi Método "Despegar Consciente"
+├── coaching-personal.html  → Coaching Personal
+├── coaching-grupal.html    → Coaching Grupal
+├── talleres.html           → Talleres
+├── libros.html             → Libros
+├── blog.html               → Blog (lista de artículos)
+├── contacto.html           → Contacto
+├── admin.html              → ✍️ PANEL PARA ESCRIBIR NUEVOS POSTS
+├── politica-privacidad.html
+├── css/styles.css          → Todos los estilos
+├── js/main.js              → Funcionalidad general
+├── js/blog.js              → Carga y muestra los posts del blog
+├── data/posts.json         → Índice de todos los artículos del blog
+└── posts/                  → Los 43 artículos del blog (archivos HTML)
+
+CÓMO ESCRIBIR UN NUEVO ARTÍCULO
+---------------------------------
+1. Abre el Terminal (Mac: Cmd+Espacio → "Terminal")
+2. Navega a la carpeta del sitio:
+   cd ruta/a/tu/carpeta/castiyuste
+3. Inicia un servidor local:
+   python3 -m http.server 8000
+4. Abre Chrome y ve a: http://localhost:8000/admin.html
+5. Escribe tu artículo, rellena los datos y pulsa "Generar"
+6. Se descargará un archivo HTML — muévelo a la carpeta posts/
+7. Copia la línea JSON al principio de data/posts.json
+8. ¡Listo! El artículo aparecerá en el blog automáticamente.
+
+CÓMO VER EL SITIO EN LOCAL
+----------------------------
+1. Abre el Terminal
+2. Ve a la carpeta: cd ruta/a/castiyuste
+3. Ejecuta: python3 -m http.server 8000
+4. Abre: http://localhost:8000
+
+CÓMO PUBLICARLO EN INTERNET (GRATIS)
+--------------------------------------
+La opción más sencilla es Netlify:
+1. Ve a netlify.com y crea una cuenta gratuita
+2. Arrastra toda la carpeta "castiyuste" al área de Netlify
+3. ¡Tu sitio estará online en minutos!
+
+Para usar tu dominio castiyuste.com, sigue las instrucciones
+de Netlify para configurar el dominio personalizado.
+=================================================

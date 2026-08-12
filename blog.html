@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Casti Yuste Coach</title>
+  <meta name="description" content="Blog de Casti Yuste Coach. Tips, reflexiones y herramientas para expatriados.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-logo"><div><div class="nav-logo-text">Casti Yuste</div><div class="nav-logo-subtitle">Coach</div></div></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="sobre-mi.html">Sobre mí</a></li>
+    <li><a href="coaching-personal.html">Coaching</a></li><li><a href="talleres.html">Talleres</a></li>
+    <li><a href="libros.html">Libros</a></li><li><a href="blog.html" class="active">Blog</a></li><li><a href="contacto.html">Contacto</a></li>
+  </ul>
+  <div class="nav-social"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="mailto:info@castiyuste.com"><i class="fas fa-envelope"></i></a></div>
+  <button class="nav-hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-content">
+    <p class="page-hero-label">Blog</p>
+    <h1 class="page-hero-title">Lives, conferencias y consejos<br>para expatriados</h1>
+  </div>
+</section>
+
+<section class="section section-cream">
+  <div class="container">
+    <p style="color:var(--text-mid);max-width:640px;margin-bottom:2rem;">Bienvenidos a mi blog con tips para viajeros como tú con familias expatriadas.</p>
+    
+    <div class="blog-filters">
+      <button class="filter-btn active" data-filter="Todos">Todos</button>
+      <button class="filter-btn" data-filter="Emociones">Emociones</button>
+      <button class="filter-btn" data-filter="Valores">Valores</button>
+      <button class="filter-btn" data-filter="Herramientas">Herramientas</button>
+      <button class="filter-btn" data-filter="Personal">Personal</button>
+      <button class="filter-btn" data-filter="Family">Family</button>
+      <button class="filter-btn" data-filter="Conferencias">Conferencias</button>
+      <button class="filter-btn" data-filter="Talleres">Talleres</button>
+      <button class="filter-btn" data-filter="Publicaciones">Publicaciones</button>
+    </div>
+
+    <div class="blog-grid-full" id="blog-grid">
+      <!-- Populated by blog.js -->
+      <div style="grid-column:1/-1;text-align:center;padding:3rem;color:var(--text-light);">
+        <p>Cargando artículos...</p>
+        <p style="font-size:0.8rem;margin-top:0.5rem;">Si el blog no carga, asegúrate de abrir el sitio desde un servidor web (no directamente desde un archivo).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section section-peach">
+  <div class="container">
+    <div class="newsletter-inner">
+      <h2>No te pierdas las novedades.</h2>
+      <p>Suscríbete para recibir nuevos artículos y talleres.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Tu correo electrónico" required>
+        <button type="submit" class="btn btn-green">Suscribirme</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><div class="footer-logo">Casti Yuste</div><p>Coach experta en expatriaciones.</p><div class="footer-social"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="mailto:info@castiyuste.com"><i class="fas fa-envelope"></i></a></div></div>
+    <div class="footer-nav"><h4>Páginas</h4><ul><li><a href="index.html">Home</a></li><li><a href="sobre-mi.html">Sobre mí</a></li><li><a href="coaching-personal.html">Coaching</a></li><li><a href="talleres.html">Talleres</a></li><li><a href="libros.html">Libros</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+    <div class="footer-contact"><h4>Contacto</h4><p><i class="fas fa-envelope" style="margin-right:6px;"></i> info@castiyuste.com</p></div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 Casti Yuste Coach.</p><a href="politica-privacidad.html">Política de privacidad</a></div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/blog.js"></script>
+</body></html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — Nuevo Post | Casti Yuste Coach</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --green: #8aaa76; --green-dark: #6b8d58; --green-bg: #c8dbbe;
+      --peach: #f5e8e0; --salmon: #c97e6a; --cream: #fdf6f2;
+      --text: #3d3530; --text-mid: #5a4f48; --text-light: #8a7a72;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Lato',sans-serif; background:var(--cream); color:var(--text); }
+    
+    .admin-header {
+      background:var(--green); color:white; padding:18px 32px;
+      display:flex; align-items:center; justify-content:space-between;
+    }
+    .admin-header h1 { font-family:'Playfair Display',serif; font-size:1.4rem; }
+    .admin-header a { color:rgba(255,255,255,0.8); font-size:0.85rem; }
+    .admin-header a:hover { color:white; }
+
+    .admin-body { max-width:860px; margin:0 auto; padding:40px 24px; }
+
+    .notice {
+      background:#fff8e6; border:1px solid #f0c040; border-radius:8px;
+      padding:16px 20px; margin-bottom:28px; font-size:0.88rem; color:#7a5a00;
+      line-height:1.6;
+    }
+    .notice strong { display:block; margin-bottom:4px; font-size:0.95rem; }
+
+    .card { background:white; border-radius:10px; padding:32px; box-shadow:0 2px 16px rgba(0,0,0,0.07); margin-bottom:24px; }
+    .card h2 { font-family:'Playfair Display',serif; font-size:1.2rem; color:var(--green-dark); margin-bottom:1.5rem; }
+
+    .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .form-group { display:flex; flex-direction:column; gap:6px; }
+    .form-group.full { grid-column:1/-1; }
+    .form-group label { font-size:0.8rem; font-weight:700; color:var(--text-mid); text-transform:uppercase; letter-spacing:0.05em; }
+    .form-group input, .form-group select, .form-group textarea {
+      padding:10px 14px; border:1.5px solid #e0d8d0; border-radius:6px;
+      font-family:'Lato',sans-serif; font-size:0.92rem; color:var(--text);
+      background:var(--cream); outline:none; transition:border-color 0.2s;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color:var(--green);
+    }
+    .form-group textarea { min-height:340px; resize:vertical; line-height:1.7; }
+
+    .toolbar {
+      display:flex; flex-wrap:wrap; gap:6px; margin-bottom:8px; padding:10px;
+      background:#f7f4f0; border:1.5px solid #e0d8d0; border-bottom:none;
+      border-radius:6px 6px 0 0;
+    }
+    .toolbar button {
+      padding:5px 12px; border:1px solid #d0c8c0; border-radius:4px;
+      background:white; font-size:0.8rem; font-family:'Lato',sans-serif;
+      cursor:pointer; color:var(--text-mid); transition:all 0.15s;
+    }
+    .toolbar button:hover { background:var(--green); color:white; border-color:var(--green); }
+    .toolbar .sep { width:1px; background:#d0c8c0; align-self:stretch; margin:0 2px; }
+
+    #editor {
+      border:1.5px solid #e0d8d0; border-top:none; border-radius:0 0 6px 6px;
+      padding:14px; min-height:380px; outline:none; font-family:'Lato',sans-serif;
+      font-size:0.95rem; line-height:1.75; color:var(--text); background:white;
+    }
+    #editor:focus { border-color:var(--green); }
+
+    .btn { padding:11px 26px; border-radius:30px; border:none; font-family:'Lato',sans-serif; font-weight:700; font-size:0.85rem; cursor:pointer; transition:all 0.2s; }
+    .btn-green { background:var(--green); color:white; }
+    .btn-green:hover { background:var(--green-dark); }
+    .btn-salmon { background:var(--salmon); color:white; }
+    .btn-salmon:hover { background:#b8614e; }
+    .btn-outline { background:transparent; border:2px solid var(--green); color:var(--green-dark); }
+    .btn-outline:hover { background:var(--green); color:white; }
+
+    .preview-box {
+      display:none; border:1.5px solid var(--green-bg); border-radius:8px;
+      padding:24px; background:var(--cream); margin-top:16px;
+    }
+    .preview-box.show { display:block; }
+    .preview-box h3 { font-family:'Playfair Display',serif; color:var(--green-dark); margin-bottom:0.75rem; }
+
+    .output-section { display:none; }
+    .output-section.show { display:block; }
+
+    .code-box {
+      background:#2d2d2d; color:#f0f0f0; border-radius:8px; padding:20px;
+      font-family:monospace; font-size:0.78rem; line-height:1.6; overflow-x:auto;
+      max-height:320px; overflow-y:auto; white-space:pre-wrap; word-break:break-all;
+    }
+    .copy-btn {
+      display:inline-flex; align-items:center; gap:6px; margin-top:10px;
+      padding:8px 18px; background:var(--green); color:white; border:none;
+      border-radius:20px; font-size:0.8rem; cursor:pointer; font-family:'Lato',sans-serif;
+    }
+    .copy-btn:hover { background:var(--green-dark); }
+
+    .steps { display:flex; flex-direction:column; gap:12px; margin-top:8px; }
+    .step { display:flex; gap:12px; align-items:flex-start; }
+    .step-num { width:28px; height:28px; border-radius:50%; background:var(--green); color:white; display:flex; align-items:center; justify-content:center; font-size:0.8rem; font-weight:700; flex-shrink:0; margin-top:2px; }
+    .step p { font-size:0.88rem; color:var(--text-mid); line-height:1.55; }
+    .step code { background:#f0ece8; padding:2px 6px; border-radius:3px; font-size:0.82rem; color:var(--salmon); }
+
+    @media(max-width:600px){ .form-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<div class="admin-header">
+  <h1>✍️ Nuevo artículo — Casti Yuste Coach</h1>
+  <a href="blog.html">← Ver blog</a>
+</div>
+
+<div class="admin-body">
+
+  <div class="notice">
+    <strong>📌 ¿Cómo funciona este panel?</strong>
+    Escribe tu artículo aquí abajo, rellena los datos y pulsa <strong>"Generar archivos"</strong>. 
+    Se descargará automáticamente el archivo HTML del post. Muévelo a la carpeta <code style="background:rgba(0,0,0,0.07);padding:1px 5px;border-radius:3px;">posts/</code> del sitio, 
+    y también copia la línea JSON indicada al principio del archivo <code style="background:rgba(0,0,0,0.07);padding:1px 5px;border-radius:3px;">data/posts.json</code>. ¡Y listo!
+  </div>
+
+  <!-- FORM -->
+  <div class="card">
+    <h2>Datos del artículo</h2>
+    <div class="form-grid">
+      <div class="form-group full">
+        <label>Título del artículo *</label>
+        <input type="text" id="post-title" placeholder="Ej: EL PODER DE LOS HÁBITOS EN LA EXPATRIACIÓN">
+      </div>
+      <div class="form-group">
+        <label>Fecha de publicación</label>
+        <input type="date" id="post-date">
+      </div>
+      <div class="form-group">
+        <label>Categoría</label>
+        <select id="post-category">
+          <option value="Herramientas">Herramientas</option>
+          <option value="Emociones">Emociones</option>
+          <option value="Valores">Valores</option>
+          <option value="Personal">Personal</option>
+          <option value="Family">Family</option>
+          <option value="Conferencias">Conferencias</option>
+          <option value="Talleres">Talleres</option>
+          <option value="Publicaciones">Publicaciones</option>
+        </select>
+      </div>
+      <div class="form-group full">
+        <label>Resumen corto (aparece en la lista del blog)</label>
+        <input type="text" id="post-excerpt" placeholder="Una frase o dos que resuman el artículo...">
+      </div>
+    </div>
+  </div>
+
+  <!-- EDITOR -->
+  <div class="card">
+    <h2>Contenido del artículo</h2>
+    <div class="toolbar">
+      <button onclick="fmt('bold')"><b>N</b></button>
+      <button onclick="fmt('italic')"><i>I</i></button>
+      <div class="sep"></div>
+      <button onclick="insertTag('h2')">Título H2</button>
+      <button onclick="insertTag('h3')">Título H3</button>
+      <div class="sep"></div>
+      <button onclick="fmt('insertUnorderedList')">• Lista</button>
+      <button onclick="fmt('insertOrderedList')">1. Lista numerada</button>
+      <div class="sep"></div>
+      <button onclick="insertLink()">🔗 Enlace</button>
+      <button onclick="insertImage()">🖼️ Imagen (URL)</button>
+      <div class="sep"></div>
+      <button onclick="insertBlockquote()">❝ Cita</button>
+    </div>
+    <div id="editor" contenteditable="true" spellcheck="true">
+      <p>Escribe aquí tu artículo. Puedes usar los botones de arriba para dar formato al texto, añadir títulos, listas, imágenes y enlaces.</p>
+    </div>
+    <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">
+      <button class="btn btn-outline" onclick="togglePreview()">👁️ Vista previa</button>
+      <button class="btn btn-salmon" onclick="generateFiles()">⬇️ Generar y descargar archivos</button>
+    </div>
+  </div>
+
+  <!-- PREVIEW -->
+  <div class="preview-box" id="preview-box">
+    <h3 id="preview-title">Título del artículo</h3>
+    <div id="preview-content" style="color:var(--text-mid);font-size:0.95rem;line-height:1.8;"></div>
+  </div>
+
+  <!-- OUTPUT -->
+  <div class="output-section card" id="output-section">
+    <h2>✅ ¡Archivos generados!</h2>
+    
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><p>Se ha descargado el archivo HTML del post. <strong>Muévelo a la carpeta <code>posts/</code></strong> de tu sitio web.</p></div>
+      <div class="step"><div class="step-num">2</div><p>Copia la siguiente línea JSON y <strong>pégala al principio del array</strong> en el archivo <code>data/posts.json</code> (después del corchete de apertura <code>[</code>):</p></div>
+    </div>
+    
+    <div style="margin-top:14px;">
+      <div class="code-box" id="json-output"></div>
+      <button class="copy-btn" onclick="copyJSON()"><i class="fas fa-copy"></i> Copiar línea JSON</button>
+    </div>
+    
+    <div class="steps" style="margin-top:20px;">
+      <div class="step"><div class="step-num">3</div><p>¡Listo! Abre <code>blog.html</code> en tu navegador (desde el servidor) y el nuevo artículo aparecerá el primero.</p></div>
+    </div>
+  </div>
+
+  <!-- INSTRUCTIONS -->
+  <div class="card">
+    <h2>ℹ️ Consejos para escribir</h2>
+    <div class="steps">
+      <div class="step"><div class="step-num">💡</div><p><strong>Para añadir una imagen:</strong> Pulsa "🖼️ Imagen (URL)" e introduce la dirección web de la imagen (o guarda la imagen en la carpeta <code>img/</code> y usa la ruta relativa <code>../img/tu-imagen.jpg</code>).</p></div>
+      <div class="step"><div class="step-num">🔗</div><p><strong>Para añadir un enlace a un libro:</strong> Selecciona el texto que quieres enlazar, pulsa "🔗 Enlace" e introduce la URL (ej: enlace de Amazon).</p></div>
+      <div class="step"><div class="step-num">📝</div><p><strong>Para añadir un título dentro del artículo:</strong> Pon el cursor donde quieras el título y pulsa "Título H2" o "Título H3".</p></div>
+      <div class="step"><div class="step-num">💾</div><p><strong>¿Cómo ejecutar el sitio en local?</strong> Abre el Terminal, ve a la carpeta del sitio y escribe: <code>python3 -m http.server 8000</code>. Luego abre <code>http://localhost:8000</code> en el navegador.</p></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // Set today's date
+  document.getElementById('post-date').valueAsDate = new Date();
+
+  function fmt(cmd) {
+    document.execCommand(cmd, false, null);
+    document.getElementById('editor').focus();
+  }
+
+  function insertTag(tag) {
+    const sel = window.getSelection();
+    const selectedText = sel.toString() || 'Título aquí';
+    document.execCommand('insertHTML', false, `<${tag}>${selectedText}</${tag}><br>`);
+  }
+
+  function insertLink() {
+    const url = prompt('URL del enlace:', 'https://');
+    if (!url) return;
+    const sel = window.getSelection();
+    const text = sel.toString() || 'enlace';
+    document.execCommand('insertHTML', false, `<a href="${url}" target="_blank">${text}</a>`);
+  }
+
+  function insertImage() {
+    const url = prompt('URL de la imagen:', 'https://');
+    if (!url) return;
+    const alt = prompt('Texto alternativo (descripción de la imagen):', '');
+    document.execCommand('insertHTML', false, `<br><img src="${url}" alt="${alt || ''}" style="max-width:100%;border-radius:6px;margin:1rem 0;"><br>`);
+  }
+
+  function insertBlockquote() {
+    const sel = window.getSelection();
+    const text = sel.toString() || 'Escribe aquí tu cita...';
+    document.execCommand('insertHTML', false, `<blockquote><p>${text}</p></blockquote><br>`);
+  }
+
+  function togglePreview() {
+    const box = document.getElementById('preview-box');
+    const title = document.getElementById('post-title').value || 'Sin título';
+    const content = document.getElementById('editor').innerHTML;
+    document.getElementById('preview-title').textContent = title;
+    document.getElementById('preview-content').innerHTML = content;
+    box.classList.toggle('show');
+  }
+
+  function slugify(str) {
+    return str
+      .toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9\s-]/g, '')
+      .trim()
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .substring(0, 60);
+  }
+
+  function formatDisplayDate(dateStr) {
+    const months = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+    const d = new Date(dateStr + 'T00:00:00');
+    return `${String(d.getDate()).padStart(2,'0')} ${months[d.getMonth()]} ${d.getFullYear()}`;
+  }
+
+  function generateFiles() {
+    const title = document.getElementById('post-title').value.trim();
+    const dateVal = document.getElementById('post-date').value;
+    const category = document.getElementById('post-category').value;
+    const excerpt = document.getElementById('post-excerpt').value.trim();
+    const contentHTML = document.getElementById('editor').innerHTML;
+
+    if (!title) { alert('Por favor, introduce el título del artículo.'); return; }
+    if (!dateVal) { alert('Por favor, selecciona la fecha.'); return; }
+
+    const slug = slugify(title);
+    const displayDate = formatDisplayDate(dateVal);
+
+    // Generate post HTML
+    const postHTML = `<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>${title} | Casti Yuste Coach</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-logo"><div><div class="nav-logo-text">Casti Yuste</div><div class="nav-logo-subtitle">Coach</div></div></div>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li><li><a href="../sobre-mi.html">Sobre mí</a></li>
+    <li><a href="../coaching-personal.html">Coaching</a></li><li><a href="../talleres.html">Talleres</a></li>
+    <li><a href="../libros.html">Libros</a></li><li><a href="../blog.html" class="active">Blog</a></li><li><a href="../contacto.html">Contacto</a></li>
+  </ul>
+  <div class="nav-social"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="mailto:info@castiyuste.com"><i class="fas fa-envelope"></i></a></div>
+  <button class="nav-hamburger"><span></span><span></span><span></span></button>
+</nav>
+<section class="post-header">
+  <div class="post-meta">
+    <span class="post-category">${category}</span>
+    <span class="post-date">${displayDate}</span>
+  </div>
+  <h1 class="post-title">${title}</h1>
+</section>
+<article class="post-body">
+  ${contentHTML}
+  <div style="text-align:center;padding:40px 0 20px;border-top:1px solid var(--peach-mid);margin-top:2rem;">
+    <a href="../blog.html" class="btn btn-outline-salmon">← Volver al blog</a>
+  </div>
+</article>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><div class="footer-logo">Casti Yuste</div><p>Coach experta en expatriaciones.</p></div>
+    <div class="footer-nav"><h4>Páginas</h4><ul><li><a href="../index.html">Home</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../contacto.html">Contacto</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 Casti Yuste Coach.</p></div>
+</footer>
+<script src="../js/main.js"><\/script>
+</body></html>`;
+
+    // Download HTML file
+    const blob = new Blob([postHTML], { type: 'text/html;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = slug + '.html';
+    a.click();
+
+    // Generate JSON entry
+    const jsonEntry = JSON.stringify({
+      title: title,
+      slug: slug,
+      date: displayDate,
+      date_iso: dateVal,
+      categories: [category],
+      excerpt: excerpt || contentHTML.replace(/<[^>]+>/g,'').trim().substring(0,200)
+    }, null, 2);
+
+    document.getElementById('json-output').textContent = jsonEntry + ',';
+    document.getElementById('output-section').classList.add('show');
+    document.getElementById('output-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function copyJSON() {
+    const text = document.getElementById('json-output').textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = document.querySelector('.copy-btn');
+      btn.textContent = '✓ ¡Copiado!';
+      setTimeout(() => btn.innerHTML = '<i class="fas fa-copy"></i> Copiar línea JSON', 2000);
+    });
+  }
+</script>
+</body>
+</html>
