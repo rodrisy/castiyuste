@@ -1831,12 +1831,10 @@ footer {
   flex: 0 0 auto;
   display: grid;
   place-items: center;
-  /* min-width, not width: each logo hugs its own content. Spacing between
-     items comes from margin-right (see .press-track comment above), not
-     a container gap, so the two-copy marquee loops without a seam. */
+  /* min-width, not width: each logo hugs its own content. Spacing is on
+     the img element itself via margin-right, so gaps are between images. */
   min-width: 130px;
   min-height: 92px;
-  margin-right: 3.2rem;
   text-align: center;
 }
 
@@ -1846,6 +1844,7 @@ footer {
   width: auto;
   height: auto;
   object-fit: contain;
+  margin-right: 75px;
 }
 
 /* Text wordmark used until a real logo file is dropped in */
@@ -2113,9 +2112,8 @@ footer {
 
   .feature-split { grid-template-columns: 1fr; }
 
-  .press-logo { margin-right: 2rem; }
   .press-logo { min-width: 100px; min-height: 76px; }
-  .press-logo img { max-height: 44px; max-width: 120px; }
+  .press-logo img { max-height: 44px; max-width: 120px; margin-right: 75px; }
 
   .badge-fab {
     width: 74px;
