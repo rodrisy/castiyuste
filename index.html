@@ -12,16 +12,16 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="nav-logo">
-    <div>
-      <div class="nav-logo-text">Casti Yuste</div>
-      <div class="nav-logo-subtitle">Coach</div>
-    </div>
-  </div>
+<!-- ANNOUNCEMENT BAR -->
+<div class="announce">
+  <a href="posts/el-hogar-entre-maletas.html">Nuevo en el blog: «Útero Vivo: El hogar entre maletas» &nbsp;→</a>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="index.html" class="brand"><img src="img/2023/09/PRUEBA-LOGO-CREMA-PARA-WEB-01-scaled.png" alt="Casti Yuste Coach"></a>
   <ul class="nav-links">
-    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="sobre-mi.html">Sobre mí</a></li>
     <li><a href="coaching-personal.html">Coaching</a></li>
     <li><a href="talleres.html">Talleres</a></li>
@@ -29,73 +29,132 @@
     <li><a href="blog.html">Blog</a></li>
     <li><a href="contacto.html">Contacto</a></li>
   </ul>
-  <div class="nav-social">
+  <div class="header-social">
     <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
     <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
     <a href="mailto:info@castiyuste.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
   </div>
-  <button class="nav-hamburger" aria-label="Menú">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
+  <button class="nav-hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+</header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="section-label">Mi Método</div>
-    <h1 class="hero-title">"Despegar<br>Consciente"</h1>
-    <p class="hero-subtitle">Para acompañarte a conseguir tu objetivo de disfrutar de una vida plena de expatriación, allá donde residas.</p>
-    <a href="mi-metodo.html" class="hero-cta">Conoce mi método</a>
+<!-- HERO — TVE feature -->
+<section class="hero-dark">
+  <div class="shell">
+    <span class="eyebrow on-dark">Casti Yuste en el Canal 24 Horas · TVE</span>
+    <h1 class="display">Lo que nadie te cuenta de la expatriación</h1>
+    <p class="hero-lede">
+      Mi intervención en televisión española sobre la maleta invisible que carga
+      toda familia expatriada: lo que se deja atrás, lo que se sostiene en silencio
+      y lo que sí se puede elegir.
+    </p>
+
+    <!-- Click-to-play. RTVE Noticias "Mujeres Expatriadas" segment; starts
+         playback at 0:57, where Casti's part begins. -->
+    <div class="video-frame" id="tve-video" data-video="https://www.youtube.com/embed/i7ryc6KC_Kk?start=57">
+      <img src="img/press/tve-livestream-poster.jpg" alt="Casti Yuste en RTVE Noticias">
+      <button class="video-play" aria-label="Reproducir el vídeo"><i class="fas fa-play"></i></button>
+      <div class="video-caption">24 Horas · TVE</div>
+    </div>
+
+    <!-- Rotating appearances -->
+    <div class="quote-rotator" id="press-rotator">
+      <div class="quote-slide active">
+        <p>«Cambiar de país sin perderte: la otra cara de empezar de nuevo»</p>
+        <div class="quote-source">Podcast La Cabaña · con Mara Esteban</div>
+      </div>
+      <div class="quote-slide">
+        <p>«Si el estrés te está ganando, haz esto»</p>
+        <div class="quote-source">Carrera Comercial · con Alfonso Mauricio</div>
+      </div>
+      <div class="quote-slide">
+        <p>«Cómo reinventarte después de migrar, sin empezar desde cero»</p>
+        <div class="quote-source">Concretemos · con Lina Coronado</div>
+      </div>
+      <div class="quote-slide">
+        <p>«El hogar entre maletas: cuando la expatriación transforma tu identidad»</p>
+        <div class="quote-source">Útero Vivo</div>
+      </div>
+    </div>
+    <div class="quote-dots" id="press-dots"></div>
   </div>
 </section>
 
-<!-- ABOUT INTRO -->
-<section class="section section-peach">
-  <div class="container">
-    <div class="grid-2">
-      <div class="about-photo">
-        <div style="width:100%;max-width:380px;height:420px;background:linear-gradient(135deg,#c8dbbe,#8aaa76);border-radius:4px;box-shadow:8px 8px 30px rgba(0,0,0,0.12);display:flex;align-items:center;justify-content:center;">
-          <span style="font-size:5rem;opacity:0.4;">🌿</span>
-        </div>
-        <div class="about-quote">
-          <p>Te acompaño a que te conozcas y descubras cómo gestionar tus emociones para disfrutar de una vida plena allá dónde te encuentres.</p>
-        </div>
+<!-- VISTO EN — press logos, auto-scrolling -->
+<section class="press-strip">
+  <div class="shell">
+    <span class="eyebrow">Visto en</span>
+  </div>
+  <div class="press-marquee">
+    <!-- Track is the logo set written out twice back-to-back so the
+         -50% loop point is seamless. Edit LOGO SET ONCE below; both
+         copies must stay identical or the loop will visibly jump. -->
+    <div class="press-track">
+
+      <!-- ===== LOGO SET (copy 1) ===== -->
+      <div class="press-logo">
+        <img src="img/press/logo-24h.svg" alt="Canal 24 Horas · TVE" style="height:66px;max-height:none;width:auto;margin-right:45px;">
       </div>
-      <div>
-        <div class="section-label">¡Hola!</div>
-        <h2 class="section-title mt-1">Soy María del Castañar, Casti,<br>coach experta en expatriaciones.</h2>
-        <p style="color:var(--text-mid);margin-bottom:1rem;">Soy mamá expatriada de familia numerosa. Desde 2009 he residido en diferentes países de Europa y América, junto a mi esposo e hijos.</p>
-        <p style="color:var(--text-mid);margin-bottom:1rem;">Una persona como tú. Yo también me topé de bruces con la cara menos amable de la expatriación. Investigué y me formé en desarrollo personal hasta dar con la clave, esa pieza del puzzle que me faltaba, y conseguí disfrutar de mi vida de expatriada y, al mismo tiempo, encontrar mi verdadera vocación: poner mi experiencia al servicio de tantas otras personas que, como tú, están en la búsqueda de esa pieza clave que les haga disfrutar de su nueva vida.</p>
-        <div class="about-signature">Casti Yuste</div>
-        <a href="sobre-mi.html" class="btn btn-salmon">Más sobre mí y mis conocimientos</a>
+      <div class="press-logo">
+        <img src="img/press/logo-tve.svg" alt="TVE">
       </div>
+      <div class="press-logo">
+        <img src="img/press/logo-larazon-new.webp" alt="La Razón" style="height:38px;max-height:none;max-width:none;width:auto;">
+      </div>
+      <div class="press-logo">
+        <img src="img/press/logo-sws-wordmark.png" alt="Spanish Women Society">
+      </div>
+      <div class="press-logo">
+        <img src="img/press/logo-womenalia.webp" alt="Womenalia — Embajadora NYC" style="height:52px;max-height:none;max-width:none;width:auto;">
+      </div>
+
+      <!-- ===== LOGO SET (copy 2 — identical, do not edit alone) ===== -->
+      <div class="press-logo" aria-hidden="true">
+        <img src="img/press/logo-24h.svg" alt="Canal 24 Horas · TVE" style="height:66px;max-height:none;width:auto;margin-right:45px;">
+      </div>
+      <div class="press-logo" aria-hidden="true">
+        <img src="img/press/logo-tve.svg" alt="TVE">
+      </div>
+      <div class="press-logo" aria-hidden="true">
+        <img src="img/press/logo-larazon-new.webp" alt="La Razón" style="height:38px;max-height:none;max-width:none;width:auto;">
+      </div>
+      <div class="press-logo" aria-hidden="true">
+        <img src="img/press/logo-sws-wordmark.png" alt="Spanish Women Society">
+      </div>
+      <div class="press-logo" aria-hidden="true">
+        <img src="img/press/logo-womenalia.webp" alt="Womenalia — Embajadora NYC" style="height:52px;max-height:none;max-width:none;width:auto;">
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- MÉTODO -->
-<section class="section section-green-light" id="metodo">
-  <div class="container text-center">
-    <div class="section-label" style="justify-content:center;margin-bottom:0.5rem;">Mi enfoque</div>
-    <h2 class="section-title mt-1" style="color:var(--green-dark);">Conoce mi Método</h2>
-    <p style="color:var(--text-mid);max-width:580px;margin:0 auto 3rem;">"Despegar Consciente" es el método con el que acompaño a personas expatriadas a encontrar el equilibrio emocional en su nueva vida.</p>
+<!-- MÉTODO — flagship block -->
+<section class="section section-cream">
+  <div class="shell text-center">
+    <span class="eyebrow">El método</span>
+    <h2 class="display mt-1" style="color:var(--green-dark);max-width:14ch;margin-inline:auto;">Despegar Consciente</h2>
+    <p style="color:var(--text-mid);max-width:62ch;margin:1.2rem auto 2.4rem;">
+      Adaptarse no consiste únicamente en encajar en un país nuevo, sino en aprender a
+      construirte de nuevo sin perderte a ti misma. «Despegar Consciente» es el método con
+      el que acompaño a personas y familias expatriadas a encontrar su equilibrio emocional
+      allá donde estén.
+    </p>
     <div class="grid-3">
       <div class="service-card">
         <div class="icon">🧭</div>
         <h3>Autoconocimiento</h3>
-        <p>Te ayudo a conocerte mejor, entender tus valores y tus emociones para tomar decisiones alineadas con quien eres.</p>
+        <p>Identificar tus valores y usarlos como brújula para tomar decisiones alineadas con quien eres.</p>
       </div>
       <div class="service-card">
         <div class="icon">🌱</div>
-        <h3>Gestión Emocional</h3>
-        <p>Aprende a gestionar el duelo migratorio, la adaptación y las emociones que acompañan el proceso de cambio.</p>
+        <h3>Gestión emocional</h3>
+        <p>Atravesar el duelo migratorio, las pérdidas invisibles y la montaña rusa de la adaptación.</p>
       </div>
       <div class="service-card">
         <div class="icon">✈️</div>
-        <h3>Acción & Propósito</h3>
-        <p>Diseña tu nueva vida de forma consciente, con claridad y dirección, disfrutando de cada destino al máximo.</p>
+        <h3>Acción y propósito</h3>
+        <p>Diseñar tu nueva vida de forma consciente, con claridad y dirección, en cada destino.</p>
       </div>
     </div>
     <div class="mt-2">
@@ -104,74 +163,63 @@
   </div>
 </section>
 
-<!-- CTA SESIÓN -->
-<section class="section section-cream" style="position:relative;">
-  <div class="dot-pattern" style="top:30px;right:60px;width:140px;height:140px;"></div>
-  <div class="container">
-    <div style="text-align:center;margin-bottom:2rem;">
-      <p style="color:var(--text-light);font-size:0.9rem;letter-spacing:0.05em;">Cuenta contigo, cuenta conmigo.</p>
+<!-- ÚLTIMOS POSTS — rail -->
+<section class="section section-peach">
+  <div class="shell">
+    <div class="rail-head">
+      <div>
+        <span class="eyebrow">Desde el blog</span>
+        <h2 class="section-title mt-1" style="margin-bottom:0;">Lo más reciente</h2>
+      </div>
+      <a href="blog.html" class="btn btn-green">Ver todo</a>
     </div>
-    <div class="cta-box">
-      <div class="icon">📅</div>
-      <h3>Reserva tu primera sesión GRATIS.</h3>
-      <p>Cambia hoy el curso de tu vida sin renunciar a lo que es importante para ti.</p>
-      <a href="coaching-personal.html" class="btn btn-salmon">Quiero Despegar</a>
+    <div class="rail" id="home-rail">
+      <!-- populated by blog.js -->
     </div>
   </div>
 </section>
 
-<!-- EBOOK -->
-<section class="section ebook-section travel-bg">
-  <div class="ebook-content">
-    <div class="ebook-mockup">
-      <div class="ebook-mockup-placeholder">
-        <h3>7 Claves para adaptarte a tu nuevo destino</h3>
-        <p>Aprende las claves para tu mejor adaptación a la vida de expatriado.</p>
+<!-- TEMAS -->
+<section class="section section-cream" style="padding-top:48px;padding-bottom:48px;">
+  <div class="shell">
+    <div class="pillars">
+      <div>
+        <span class="eyebrow">Explora por tema</span>
+        <h2 class="section-title pillars-title">¿Qué estás atravesando?</h2>
+        <ul class="pillars-list">
+          <li><a href="blog.html?cat=Emociones">Emociones</a></li>
+          <li><a href="blog.html?cat=Valores">Valores</a></li>
+          <li><a href="blog.html?cat=Herramientas">Herramientas</a></li>
+          <li><a href="blog.html?cat=Family">Familia</a></li>
+          <li><a href="blog.html?cat=Personal">Personal</a></li>
+          <li><a href="blog.html">Duelo migratorio</a></li>
+          <li><a href="blog.html">Identidad</a></li>
+          <li><a href="blog.html">Adaptación</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="ebook-text">
-      <div class="section-label" style="margin-bottom:0.75rem;">Recurso gratuito</div>
-      <h2>Consigue mi nuevo Ebook</h2>
-      <p>Descarga gratis las <strong>7 claves para adaptarte a tu nuevo destino</strong> y empieza hoy tu proceso de adaptación consciente.</p>
-      <a href="contacto.html" class="btn btn-salmon">Descarga Gratis</a>
+      <div class="pillars-media">
+        <img src="img/2023/08/IMG_9213.jpg" alt="Casti Yuste con su familia">
+      </div>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="section section-green text-center">
-  <div class="container">
-    <div class="section-label" style="justify-content:center;color:rgba(255,255,255,0.7);margin-bottom:1.5rem;">
-      <span style="background:rgba(255,255,255,0.4);height:2px;"></span>
-      Testimonios y opiniones
-    </div>
-    <div style="position:relative;">
-      <div class="testimonial-slide testimonial-card">
-        <p>"El saber que somos varias personas descubriendo nuevas costumbres, nuevos mundos, diferentes sociedades y todo lo que ello nos puede agregar, como grandes oportunidades, red de contactos y sobre todo, un vínculo de amistad verdadero y sostenible."</p>
-        <div class="testimonial-author">
-          <div class="avatar">👤</div>
-          <div class="name">Iris Paz</div>
-        </div>
+<!-- LIBRO / EBOOK — dark feature -->
+<section class="feature-dark">
+  <div class="shell">
+    <div class="feature-split">
+      <img src="img/2023/05/EBOOK-1-SUELTO-1-1024x1024.png" alt="Ebook: 7 claves para adaptarte a tu nuevo destino">
+      <div>
+        <span class="eyebrow on-dark">Recurso gratuito</span>
+        <h2 class="display mt-1">7 claves para adaptarte a tu nuevo destino</h2>
+        <p style="margin:1.2rem 0 2rem;max-width:52ch;">
+          Descarga gratis la guía con la que empezar hoy tu proceso de adaptación consciente.
+          Y si quieres profundizar, encontrarás en <em>La maleta de la pareja expatriada</em>
+          todo lo que aprendí en dieciséis años acompañando a mi familia por el mundo.
+        </p>
+        <a href="contacto.html" class="btn btn-salmon">Descargar gratis</a>
+        <a href="libros.html" class="btn btn-outline" style="margin-left:0.6rem;">Ver mis libros</a>
       </div>
-      <div class="testimonial-slide testimonial-card" style="display:none;">
-        <p>"Casti me ayudó a encontrar mi equilibrio en una etapa muy difícil de adaptación. Su método es claro, humano y efectivo. La recomiendo a cualquier persona que esté viviendo la experiencia de la expatriación."</p>
-        <div class="testimonial-author">
-          <div class="avatar">👤</div>
-          <div class="name">Ana García</div>
-        </div>
-      </div>
-      <div class="testimonial-slide testimonial-card" style="display:none;">
-        <p>"Gracias a las sesiones con Casti entendí que mi malestar tenía nombre: duelo migratorio. Esa toma de conciencia fue el primer paso para transformar mi experiencia como expatriada."</p>
-        <div class="testimonial-author">
-          <div class="avatar">👤</div>
-          <div class="name">María López</div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-dots" style="margin-top:1.5rem;">
-      <span class="testimonial-dot active"></span>
-      <span class="testimonial-dot"></span>
-      <span class="testimonial-dot"></span>
     </div>
   </div>
 </section>
@@ -179,7 +227,7 @@
 <!-- NEWSLETTER -->
 <section class="section section-peach newsletter-section" style="position:relative;">
   <div class="dot-pattern" style="top:20px;right:40px;"></div>
-  <div class="container">
+  <div class="shell">
     <div class="newsletter-inner">
       <h2>No te pierdas mis próximos talleres y novedades.</h2>
       <p>Suscríbete a mi newsletter para estar unidxs en el viaje.</p>
@@ -191,23 +239,22 @@
   </div>
 </section>
 
-<!-- RECENT BLOG POSTS -->
+<!-- SOBRE MÍ -->
 <section class="section section-cream">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-bottom:2rem;">
-      <div class="blog-section-header">
-        <h2>Posts y lives más recientes</h2>
-        <p>Lives, conferencias y consejos para que la expatriación sea un camino más fácil que recorrer.</p>
+  <div class="shell">
+    <div class="grid-2">
+      <div class="about-photo">
+        <img src="img/2023/03/IMG_7106-683x1024.jpeg" alt="Casti Yuste"
+             style="width:100%;max-width:380px;border-radius:6px;box-shadow:8px 8px 30px rgba(0,0,0,0.12);">
       </div>
-      <div style="color:var(--text-mid);font-size:0.95rem;padding-top:10px;">
-        <p>Tranquilx, no estás solx. Sé exactamente lo que estás viviendo. ¿Vas a permitir que tus miedos al cambio te alejen de la vida que deseas? Te propongo vivirlo desde otro lugar, acompañadx con calidez, confianza, respeto y empatía.</p>
+      <div>
+        <span class="eyebrow">¡Hola!</span>
+        <h2 class="section-title mt-1">Soy María del Castañar, Casti,<br>coach experta en expatriaciones.</h2>
+        <p style="color:var(--text-mid);margin-bottom:1rem;">Soy mamá expatriada de familia numerosa. Desde 2009 he residido en diferentes países de Europa y América, junto a mi esposo e hijos.</p>
+        <p style="color:var(--text-mid);margin-bottom:1rem;">Una persona como tú. Yo también me topé de bruces con la cara menos amable de la expatriación. Investigué y me formé en desarrollo personal hasta dar con la clave, esa pieza del puzzle que me faltaba, y conseguí disfrutar de mi vida de expatriada y, al mismo tiempo, encontrar mi verdadera vocación: poner mi experiencia al servicio de tantas otras personas que, como tú, están en la búsqueda de esa pieza clave que les haga disfrutar de su nueva vida.</p>
+        <div class="about-signature">Casti Yuste</div>
+        <a href="sobre-mi.html" class="btn btn-salmon">Más sobre mí</a>
       </div>
-    </div>
-    <div class="blog-grid" id="home-blog-grid">
-      <!-- populated by blog.js -->
-    </div>
-    <div class="blog-center">
-      <a href="blog.html" class="btn btn-green">Ver más</a>
     </div>
   </div>
 </section>
@@ -219,10 +266,10 @@
       <div class="footer-logo">Casti Yuste</div>
       <p>Coach experta en expatriaciones. Te acompaño a disfrutar de una vida plena allá donde residas con mi método "Despegar Consciente".</p>
       <div class="footer-social">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="mailto:info@castiyuste.com"><i class="fas fa-envelope"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="mailto:info@castiyuste.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
     <div class="footer-nav">
@@ -250,6 +297,17 @@
   </div>
 </footer>
 
+<a href="mi-metodo.html" class="badge-fab">¿Nueva<br>por aquí?</a>
+
+<script>
+  /* ────────────────────────────────────────────────────────────
+     VÍDEO DESTACADO — TVE / Canal 24 Horas
+     Pega aquí la URL del vídeo y el reproductor se activa solo.
+     Acepta un embed de YouTube  ('https://www.youtube.com/embed/ID'),
+     un iframe de RTVE Play, o un archivo local ('img/video/tve.mp4').
+     ──────────────────────────────────────────────────────────── */
+  window.TVE_VIDEO_URL = '';
+</script>
 <script src="js/main.js"></script>
 <script src="js/blog.js"></script>
 </body>

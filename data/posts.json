@@ -1,5 +1,82 @@
 [
   {
+    "title": "Útero Vivo: El hogar entre maletas",
+    "slug": "el-hogar-entre-maletas",
+    "date": "29 Jun 2026",
+    "date_iso": "2026-06-29",
+    "categories": [
+      "Emociones"
+    ],
+    "excerpt": "CARRERA COMERCIAL CON ALFONSO MAURICIO",
+    "image": "img/2026/06/Imagen-29-6-26-a-las-16.18-1024x565.jpeg"
+  },
+  {
+    "title": "LA EXPATRIACIÓN NO ENTIENDE DE INMEDIATEZ",
+    "slug": "la-expatriacion-no-entiende-de-inmediatez",
+    "date": "02 Jun 2026",
+    "date_iso": "2026-06-02",
+    "categories": [
+      "Emociones"
+    ],
+    "excerpt": "LA EXPATRIACIÓN NO ENTIENDE DE INMEDIATEZ",
+    "image": "img/2026/05/nataly-k-3OTA_SU3ubI-unsplash-scaled.jpg"
+  },
+  {
+    "title": "Cómo reinventarte después de migrar (SIN empezar desde cero)",
+    "slug": "como-reinventarte-despues-de-migrar-sin-empezar-desde-cero",
+    "date": "12 May 2026",
+    "date_iso": "2026-05-12",
+    "categories": [
+      "Emociones"
+    ],
+    "excerpt": "CONCRETEMOS",
+    "image": "img/2026/05/Captura-de-pantalla-2026-02-27-a-las-12.35.54.png"
+  },
+  {
+    "title": "Liderazgo con Propósito: Gestión del estrés y resiliencia emocional",
+    "slug": "liderazgo-con-proposito-gestion-del-estres-y-resiliencia-emocional",
+    "date": "12 May 2026",
+    "date_iso": "2026-05-12",
+    "categories": [
+      "Emociones"
+    ],
+    "excerpt": "CARRERA COMERCIAL CON ALFONSO MAURICIO",
+    "image": "img/2026/05/IMG_8600-1024x586.jpeg"
+  },
+  {
+    "title": "Cambiar de país sin perderte: la otra cara de empezar de nuevo.",
+    "slug": "cambiar-de-pais-sin-perderte-la-otra-cara-de-empezar-de-nuevo",
+    "date": "12 May 2026",
+    "date_iso": "2026-05-12",
+    "categories": [
+      "Emociones"
+    ],
+    "excerpt": "LA CABAÑA DA VIDA A TUS SUEÑOS",
+    "image": "img/2026/05/Imagen-12-5-26-a-las-11.51-1024x576.jpeg"
+  },
+  {
+    "title": "CONCILIAR: EL TIEMPO INVISIBLE DE LA PAREJA EXPATRIADA",
+    "slug": "conciliar-el-tiempo-invisible-de-la-pareja-expatriada",
+    "date": "07 May 2026",
+    "date_iso": "2026-05-07",
+    "categories": [
+      "Emociones"
+    ],
+    "excerpt": "¿Elegir o renunciar? La diferencia que transforma la vida de la mujer expatriada",
+    "image": "img/2026/05/mike-scheid-0iqkntLw93A-unsplash-scaled.jpg"
+  },
+  {
+    "title": "¿ELEGIR O RENUNCIAR?",
+    "slug": "elegir-o-renunciar",
+    "date": "06 Apr 2026",
+    "date_iso": "2026-04-06",
+    "categories": [
+      "Emociones"
+    ],
+    "excerpt": "¿Elegir o renunciar? La diferencia que transforma la vida de la mujer expatriada",
+    "image": "img/2026/04/henry-schneider-sc8xkk8PAE0-unsplash-scaled.jpg"
+  },
+  {
     "title": "EL RETO INVISIBLE DE LA MUJER EXPATRIADA",
     "slug": "el-reto-invisible-de-la-mujer-expatriada",
     "date": "13 Mar 2026",
@@ -10,7 +87,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Y en esta ocasión quiero hablarte del reto invisible de la mujer expatriada y no voy a hablarte de techos de cristal ni de cifras ni de estadísticas."
+    "excerpt": "Y en esta ocasión quiero hablarte del reto invisible de la mujer expatriada y no voy a hablarte de techos de cristal ni de cifras ni de estadísticas.",
+    "image": "img/2026/03/Captura-de-pantalla-2026-03-12-a-las-23.36.16.png"
   },
   {
     "title": "LA AMISTAD EN LA VIDA EXPATRIADA: LOS VÍNCULOS QUE VIAJAN (Y LOS QUE NO)",
@@ -23,7 +101,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Febrero es el mes de la amistad."
+    "excerpt": "Febrero es el mes de la amistad.",
+    "image": "img/2026/02/Captura-de-pantalla-2026-02-13-a-las-23.23.07-1024x481.png"
   },
   {
     "title": "LA INDECISIÓN",
@@ -36,7 +115,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Llegar a un país nuevo no suele paralizarnos de golpe. Lo que suele paralizarnos es todo lo que viene después."
+    "excerpt": "Llegar a un país nuevo no suele paralizarnos de golpe. Lo que suele paralizarnos es todo lo que viene después.",
+    "image": "img/2026/01/kyle-glenn-IFLgWYlT2fI-unsplash-1024x683.jpg"
   },
   {
     "title": "EL LISTADO QUE TE CAMBIA EL AÑO",
@@ -49,7 +129,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Hay un ritual que llevo años haciendo, pero que este diciembre ha cobrado un significado completamente distinto.Como expatriada, mis años nunca se sienten lineales. No siguen una estructura convencion"
+    "excerpt": "Hay un ritual que llevo años haciendo, pero que este diciembre ha cobrado un significado completamente distinto.Como expatriada, mis años nunca se sienten lineales. No siguen una estructura convencion",
+    "image": "img/2025/12/jakub-zerdzicki-E9abH9GT-io-unsplash-1024x618.jpg"
   },
   {
     "title": "CUANDO LOS HIJOS VUELAN",
@@ -61,7 +142,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Hay un momento en la vida expatriada del que nadie habla con claridad. Un instante que llega sin hacer ruido, pero que rompe, remueve y reorganiza todo por dentro:Cuando un hijo decide comenzar su vid"
+    "excerpt": "Hay un momento en la vida expatriada del que nadie habla con claridad. Un instante que llega sin hacer ruido, pero que rompe, remueve y reorganiza todo por dentro:Cuando un hijo decide comenzar su vid",
+    "image": "img/2025/11/baim-hanif-pYWuOMhtc6k-unsplash-1024x681.jpg"
   },
   {
     "title": "Live con Zinquo: CONVIERTE LA MOCHILA QUE CARGAS EN UNA MALETA INVISIBLE",
@@ -74,7 +156,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "LA MOCHILA QUE CARGAS"
+    "excerpt": "LA MOCHILA QUE CARGAS",
+    "image": "img/2025/10/IMG_6437-909x1024.jpeg"
   },
   {
     "title": "Conversando en Mujeres con Corazón: La maleta que no ves: reinventarse sin perderse cuando todo cambia",
@@ -87,7 +170,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Mujeres con Corazón descubre \"La maleta de la pareja expatriada\" y la maleta que no ves: reinventarse sin perderse cuando todo cambia"
+    "excerpt": "Mujeres con Corazón descubre \"La maleta de la pareja expatriada\" y la maleta que no ves: reinventarse sin perderse cuando todo cambia",
+    "image": "img/2025/10/c2d73753-788c-4e3d-887b-1317f7b915ca-819x1024.jpeg"
   },
   {
     "title": "\"LA MALETA DE LA PAREJA EXPATRIADA: 12 verdades incómodas convertidas en oportunidades\"",
@@ -99,7 +183,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Hace justo un mes, el 20 de septiembre, presentaba en España \"La maleta de la pareja expatriada: 12 verdades incómodas convertidas en oportunidades\".Recuerdo aquel día con una mezcla de emoción y vért"
+    "excerpt": "Hace justo un mes, el 20 de septiembre, presentaba en España \"La maleta de la pareja expatriada: 12 verdades incómodas convertidas en oportunidades\".Recuerdo aquel día con una mezcla de emoción y vért",
+    "image": "img/2025/10/20250920_NEVEN_185-1024x683.jpeg"
   },
   {
     "title": "Entrevista en Libros que VENDEN: \"La Maleta de la Pareja Expatriada\"",
@@ -113,7 +198,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "El 16 de agosto de 2025, tuve el placer de ser entrevistada por Rosa Montaña en su Podcast \"Libros que Venden\", con motivo de la publicación de mi primer libro en solitario \"La maleta de la pareja exp"
+    "excerpt": "El 16 de agosto de 2025, tuve el placer de ser entrevistada por Rosa Montaña en su Podcast \"Libros que Venden\", con motivo de la publicación de mi primer libro en solitario \"La maleta de la pareja exp",
+    "image": "img/2025/09/Captura-de-pantalla-2025-09-01-a-las-12.05.04-1024x415.png"
   },
   {
     "title": "LA EXPATRIACIÓN NO ERA ESTO... ¿O SÍ?",
@@ -125,7 +211,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "La vida de expatriado suele verse como una aventura emocionante llena de oportunidades para explorar nuevas culturas, crecer profesionalmente y disfrutar de experiencias únicas."
+    "excerpt": "La vida de expatriado suele verse como una aventura emocionante llena de oportunidades para explorar nuevas culturas, crecer profesionalmente y disfrutar de experiencias únicas.",
+    "image": "img/2025/07/romina-ahmadpour-HwjSCdC4H2Y-unsplash-1024x683.jpg"
   },
   {
     "title": "LA MATERNIDAD EN LA  EXPATRIACIÓN",
@@ -137,7 +224,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "La maternidad en la expatriación es un reto diario. Ser madre ya es un desafío en sí mismo, pero serlo en un nuevo país, lejos del entorno familiar y de apoyo habitual, añade una capa extra de complej"
+    "excerpt": "La maternidad en la expatriación es un reto diario. Ser madre ya es un desafío en sí mismo, pero serlo en un nuevo país, lejos del entorno familiar y de apoyo habitual, añade una capa extra de complej",
+    "image": "img/2025/05/Captura-de-pantalla-2025-06-02-a-las-22.26.13.png"
   },
   {
     "title": "Live - Soltando amarras",
@@ -151,7 +239,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "El 1 de Mayo 2025 fui entrevistada por Chrystina Sámano en su espacio Mujerología. En este espacio hablé de \"Soltando Amarras\" un taller donde descubrirás una herramienta imprescindible para vivir en "
+    "excerpt": "El 1 de Mayo 2025 fui entrevistada por Chrystina Sámano en su espacio Mujerología. En este espacio hablé de \"Soltando Amarras\" un taller donde descubrirás una herramienta imprescindible para vivir en ",
+    "image": "img/2025/05/IMG_3238-923x1536.jpeg"
   },
   {
     "title": "MENTE ABIERTA",
@@ -163,7 +252,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Cuando crucé la meta de mi tercera media maratón, una oleada de emociones me invadió. No solo por haber completado algo más de 21 kilómetros, sino por todo lo que ese momento simbolizaba. Porque este "
+    "excerpt": "Cuando crucé la meta de mi tercera media maratón, una oleada de emociones me invadió. No solo por haber completado algo más de 21 kilómetros, sino por todo lo que ese momento simbolizaba. Porque este ",
+    "image": "img/2025/05/IMG_3291-1-864x1536.jpeg"
   },
   {
     "title": "Entrevista  Unidas Sanamos: Calma en el caos",
@@ -177,7 +267,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Unidas Sanamos: Calma en el caos. El 19 de Marzo 2025 fui entrevistada por Angie en su espacio Calma en el caos dentro de la comunidad Unidas Sanamos. En este espacio hablé del Mapa del Estrés como un"
+    "excerpt": "Unidas Sanamos: Calma en el caos. El 19 de Marzo 2025 fui entrevistada por Angie en su espacio Calma en el caos dentro de la comunidad Unidas Sanamos. En este espacio hablé del Mapa del Estrés como un",
+    "image": "img/2025/04/IMG_3069-e1744205647699-1024x739.jpeg"
   },
   {
     "title": "MUJERES ESCALERA",
@@ -189,7 +280,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Cuando decides dejar tu país para embarcarte a la aventura de vivir como expatriado, afrontas un sinfín de desafíos. La ilusión y la incertidumbre caminan de la mano, y aunque la adaptación es un proc"
+    "excerpt": "Cuando decides dejar tu país para embarcarte a la aventura de vivir como expatriado, afrontas un sinfín de desafíos. La ilusión y la incertidumbre caminan de la mano, y aunque la adaptación es un proc",
+    "image": "img/2025/04/alejandra-rodriguez-HegRtaHGrag-unsplash-1024x679.jpg"
   },
   {
     "title": "LOS BROTES LLEGAN EN SILENCIO",
@@ -203,7 +295,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Marzo es el mes en el que la naturaleza nos recuerda que, después de meses de espera y preparación, los primeros brotes emergen. Esos pequeños indicios de vida son la prueba de que la paciencia y el t"
+    "excerpt": "Marzo es el mes en el que la naturaleza nos recuerda que, después de meses de espera y preparación, los primeros brotes emergen. Esos pequeños indicios de vida son la prueba de que la paciencia y el t",
+    "image": "img/2025/03/grigorii-sukhorukov-IYO4MQ46SYE-unsplash-1024x683.jpg"
   },
   {
     "title": "EL CAMINO DEL EXPATRIADO",
@@ -215,7 +308,8 @@
       "Herramientas",
       "Personal"
     ],
-    "excerpt": "Querido lector/a, quiero comenzar este episodio compartiendo una historia Zen fascinante, la cual me ha hecho reflexionar sobre el camino del expatriado. La historia dice así:"
+    "excerpt": "Querido lector/a, quiero comenzar este episodio compartiendo una historia Zen fascinante, la cual me ha hecho reflexionar sobre el camino del expatriado. La historia dice así:",
+    "image": "img/2025/02/alex-guillaume-yZE67s_Br5g-unsplash-1024x576.jpg"
   },
   {
     "title": "LOS MIEDOS EN LA EXPATRIACIÓN",
@@ -227,7 +321,8 @@
       "Herramientas",
       "Personal"
     ],
-    "excerpt": "Los miedos en la expatriación. Hay dos épocas en el año que marcan la vida de las personas que cambian de residencia por razones de movilidad laboral. Una es el verano en el hemisferio Norte, coincidi"
+    "excerpt": "Los miedos en la expatriación. Hay dos épocas en el año que marcan la vida de las personas que cambian de residencia por razones de movilidad laboral. Una es el verano en el hemisferio Norte, coincidi",
+    "image": "img/2025/01/Captura-de-pantalla-2025-01-29-a-las-19.03.08.png"
   },
   {
     "title": "Entrevista  Mujeres con Corazón en la Expatriación",
@@ -240,7 +335,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Mujeres con Corazón descubre Despegar Cosnciente. El 12 de Noviembre 2024 fui entrevistada por M Angels Olivé en su espacio Mujeres con Corazón. Abrí mi corazón para hablarte de mi experiencia de vida"
+    "excerpt": "Mujeres con Corazón descubre Despegar Cosnciente. El 12 de Noviembre 2024 fui entrevistada por M Angels Olivé en su espacio Mujeres con Corazón. Abrí mi corazón para hablarte de mi experiencia de vida",
+    "image": "img/2025/01/Captura-de-pantalla-2025-01-29-a-las-18.59.25.png"
   },
   {
     "title": "CUESTIÓN DE PREFERENCIAS, NO DE TIEMPO: PRIORÍZATE",
@@ -252,7 +348,8 @@
       "Herramientas",
       "Personal"
     ],
-    "excerpt": "Cuestión de preferencias, no de tiempo: Priorízate. Llegamos de nuevo a diciembre y no nos dimos cuenta. El mundo se mueve a una velocidad vertiginosa, y es muy común escuchar la frase “No tengo tiemp"
+    "excerpt": "Cuestión de preferencias, no de tiempo: Priorízate. Llegamos de nuevo a diciembre y no nos dimos cuenta. El mundo se mueve a una velocidad vertiginosa, y es muy común escuchar la frase “No tengo tiemp",
+    "image": "img/2024/12/rocco-stoppoloni-Db0NyN8wlGA-unsplash-1024x683.jpg"
   },
   {
     "title": "UN VIAJE DE PARALELISMOS: EXPATRIACION VS CARRERA",
@@ -265,7 +362,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Sí, expatriación vs carrera. Ya hace cinco semanas regresamos a NYC, después de disfrutar de un verano más en España junto a familia y amigos. Y hace un mes retomé mi rutina de salir a correr en las m"
+    "excerpt": "Sí, expatriación vs carrera. Ya hace cinco semanas regresamos a NYC, después de disfrutar de un verano más en España junto a familia y amigos. Y hace un mes retomé mi rutina de salir a correr en las m",
+    "image": "img/2024/10/capstone-events-4oK5BlObZXg-unsplash-1024x683.jpg"
   },
   {
     "title": "LA ABUNDANCIA",
@@ -278,7 +376,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "La abundancia no se trata solo de riqueza material, sino de tener una vida plena en todos los aspectos: relaciones, salud, crecimiento personal y bienestar emocional.&nbsp;Es curioso como todos desean"
+    "excerpt": "La abundancia no se trata solo de riqueza material, sino de tener una vida plena en todos los aspectos: relaciones, salud, crecimiento personal y bienestar emocional.&nbsp;Es curioso como todos desean",
+    "image": "img/2024/08/pexels-livier-garcia-645743-1459339-1024x683.jpg"
   },
   {
     "title": "REVISA Y REFLEXIONA",
@@ -291,7 +390,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Querid@ lector@,Deseo que hayas tenido una mitad de año estupendo y este mes de Julio te haya dado pie a revisar los meses transcurridos, tus objetivos para este año, revisa y reflexiona sobre el cami"
+    "excerpt": "Querid@ lector@,Deseo que hayas tenido una mitad de año estupendo y este mes de Julio te haya dado pie a revisar los meses transcurridos, tus objetivos para este año, revisa y reflexiona sobre el cami",
+    "image": "img/2024/07/IMG_7735-1024x576.jpeg"
   },
   {
     "title": "LA MUDANZA INTERNACIONAL",
@@ -303,7 +403,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "La mudanza internacional, de 470 a 275 bultos, sí."
+    "excerpt": "La mudanza internacional, de 470 a 275 bultos, sí.",
+    "image": "img/2023/05/pexels-ketut-subiyanto-4247724-683x1024.jpg"
   },
   {
     "title": "Entrevista sobre valores estrés y familia",
@@ -316,7 +417,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "El pasado 24 de abril tuve la suerte de que me hiciesen una entrevista sobre valores, estrés y familia por el coach Jose Polegre."
+    "excerpt": "El pasado 24 de abril tuve la suerte de que me hiciesen una entrevista sobre valores, estrés y familia por el coach Jose Polegre.",
+    "image": "img/2024/05/Captura-de-Pantalla-2024-05-08-a-las-9.52.07.png"
   },
   {
     "title": "EL DUELO MIGRATORIO",
@@ -328,7 +430,8 @@
       "Herramientas",
       "Valores"
     ],
-    "excerpt": "Este mes te quiero hablar del duelo migratorio. Se denomina duelo migratorio a la forma de procesar la pérdida que ocurre cuando uno se muda de un país a otro. Es el proceso de adaptación a la nueva r"
+    "excerpt": "Este mes te quiero hablar del duelo migratorio. Se denomina duelo migratorio a la forma de procesar la pérdida que ocurre cuando uno se muda de un país a otro. Es el proceso de adaptación a la nueva r",
+    "image": "img/2024/05/raymond-eichelberger-pHbdHcySA6E-unsplash-1024x683.jpg"
   },
   {
     "title": "Video 11 historias extraordinarias",
@@ -340,7 +443,8 @@
       "Herramientas",
       "Personal"
     ],
-    "excerpt": "Video 11 historias extraordinarias, lanzamiento del libro colaborativo de crecimiento personal, en el que he participado escribiendo un capítulo, pinceladas de mi historia hacia la toma de consciencia"
+    "excerpt": "Video 11 historias extraordinarias, lanzamiento del libro colaborativo de crecimiento personal, en el que he participado escribiendo un capítulo, pinceladas de mi historia hacia la toma de consciencia",
+    "image": "img/2024/03/IMG_6109-1024x827.jpeg"
   },
   {
     "title": "DESPEGAR CONSCIENTE",
@@ -353,7 +457,8 @@
       "Personal",
       "Valores"
     ],
-    "excerpt": "Despegar consciente querid@ lector@ ya llegó el mes de Abril, uno de mis favoritos. Y te preguntarás la razón. Me encanta abril, pues a pesar de ser el mes que se caracteriza por ser el mes más lluvio"
+    "excerpt": "Despegar consciente querid@ lector@ ya llegó el mes de Abril, uno de mis favoritos. Y te preguntarás la razón. Me encanta abril, pues a pesar de ser el mes que se caracteriza por ser el mes más lluvio",
+    "image": "img/2024/04/primavera-683x1024.jpg"
   },
   {
     "title": "PARA, RESPIRA Y DESCUBRE.",
@@ -364,7 +469,8 @@
       "Herramientas",
       "Valores"
     ],
-    "excerpt": "Querid@ lector@ para respira y descubre:"
+    "excerpt": "Querid@ lector@ para respira y descubre:",
+    "image": "img/2024/03/pexels-nina-uhlikova-725255-1-1024x768.jpg"
   },
   {
     "title": "CAMBIO VS TRANSFORMACIÓN",
@@ -377,7 +483,8 @@
       "Personal",
       "Publicaciones"
     ],
-    "excerpt": "Querida lector@ hoy hablaremos de cambio vs transformación:En este capítulo quisiera adentrarme en la diferencia entre cambio y transformación necesaria para alzar el vuelo. Para muchas personas puede"
+    "excerpt": "Querida lector@ hoy hablaremos de cambio vs transformación:En este capítulo quisiera adentrarme en la diferencia entre cambio y transformación necesaria para alzar el vuelo. Para muchas personas puede",
+    "image": "img/2024/01/felix-mittermeier-Xk0DZSYv1ao-unsplash-743x1024.jpg"
   },
   {
     "title": "Alzando el vuelo con Casti capítulo 4",
@@ -389,7 +496,8 @@
       "Herramientas",
       "Publicaciones"
     ],
-    "excerpt": "Capítulo 4 de Alzando el vuelo con Casti y ¡Contribuyendo al empoderamiento de la mujer! en este cuarto capítulo os hablo de qué necesitamos para alzar el vuelo."
+    "excerpt": "Capítulo 4 de Alzando el vuelo con Casti y ¡Contribuyendo al empoderamiento de la mujer! en este cuarto capítulo os hablo de qué necesitamos para alzar el vuelo.",
+    "image": "img/2023/12/alzando-el-vuelo-con-casti-cmc-4-1024x983.jpeg"
   },
   {
     "title": "LA AUTOESTIMA",
@@ -401,7 +509,8 @@
       "Family",
       "Herramientas"
     ],
-    "excerpt": "En este capítulo me gustaría hablarte de la autoestima, tan importante como difícil de mantener para Despegar Consciente. Y es que la autoestima es necesaria para poder despegar y después mantener con"
+    "excerpt": "En este capítulo me gustaría hablarte de la autoestima, tan importante como difícil de mantener para Despegar Consciente. Y es que la autoestima es necesaria para poder despegar y después mantener con",
+    "image": "img/2023/12/mor-shani-gXwh7Qkiw20-unsplash-683x1024.jpg"
   },
   {
     "title": "Live con Zinquo: VALORES Y EXPATRIACIÓN",
@@ -411,7 +520,8 @@
     "categories": [
       "Sin categoría"
     ],
-    "excerpt": "Os dejo el nuevo live con Zinquo que hicimos el 26 de Octubre. Conoce mejor la conexión entre valores y expatriación."
+    "excerpt": "Os dejo el nuevo live con Zinquo que hicimos el 26 de Octubre. Conoce mejor la conexión entre valores y expatriación.",
+    "image": "img/2023/11/WhatsApp-Image-2023-11-04-at-01.30.30.jpeg"
   },
   {
     "title": "Alzando el vuelo con Casti capítulo 2",
@@ -423,7 +533,8 @@
       "Herramientas",
       "Publicaciones"
     ],
-    "excerpt": "Alzando el vuelo con Casti capítulo 2, es el honor de publicar en la plataforma de Una Mujer Cualquiera, donde mujeres como nosotras dejan su testimonio para ayudar a otras, donde iré relatando y ayud"
+    "excerpt": "Alzando el vuelo con Casti capítulo 2, es el honor de publicar en la plataforma de Una Mujer Cualquiera, donde mujeres como nosotras dejan su testimonio para ayudar a otras, donde iré relatando y ayud",
+    "image": "img/2023/10/Captura-de-Pantalla-2023-10-16-a-las-13.17.26.png"
   },
   {
     "title": "Live sobre las figuras sistémicas.",
@@ -433,7 +544,8 @@
     "categories": [
       "Conferencias"
     ],
-    "excerpt": "Live con Matilde Pastor: las figuras sistémicas y expatriación, hablaremos sobre cómo generar el cambio con \"FIGURAS SISTÉMICAS\" y cómo puede cambiar la posición del sistema familiar al irte a otro pa"
+    "excerpt": "Live con Matilde Pastor: las figuras sistémicas y expatriación, hablaremos sobre cómo generar el cambio con \"FIGURAS SISTÉMICAS\" y cómo puede cambiar la posición del sistema familiar al irte a otro pa",
+    "image": "img/2023/09/Captura-de-Pantalla-2023-09-21-a-las-11.41.11.png"
   },
   {
     "title": "Taller el valor de los valores con Nathalie",
@@ -445,7 +557,8 @@
       "Emociones",
       "Valores"
     ],
-    "excerpt": "Directo con Nathalie, donde hicimos una introducción al Taller el valor de los valores que impartiremos el 21 de febrero en CDMX. Aún tenemos algunas plazas disponibles. Te esperamos. En perfil encont"
+    "excerpt": "Directo con Nathalie, donde hicimos una introducción al Taller el valor de los valores que impartiremos el 21 de febrero en CDMX. Aún tenemos algunas plazas disponibles. Te esperamos. En perfil encont",
+    "image": "img/2023/09/Captura-de-Pantalla-2023-10-04-a-las-16.24.16-899x1024.png"
   },
   {
     "title": "La importancia de los VALORES en tu EMPRENDIMIENTO.",
@@ -457,7 +570,8 @@
       "Herramientas",
       "Valores"
     ],
-    "excerpt": "La Importancia de Los Valores en tu Emprendimiento analizamos en directo junto con Eli Pabon Zabala."
+    "excerpt": "La Importancia de Los Valores en tu Emprendimiento analizamos en directo junto con Eli Pabon Zabala.",
+    "image": "img/2023/09/Captura-de-Pantalla-2023-10-04-a-las-16.24.04-1024x1024.png"
   },
   {
     "title": "Alzando el vuelo con Casti 1",
@@ -469,7 +583,8 @@
       "Herramientas",
       "Publicaciones"
     ],
-    "excerpt": "Alzando el vuelo con Casti 1 es el honor de publicar en la plataforma de Una Mujer Cualquiera, donde mujeres como nosotras dejan su testimonio para ayudar a otras, donde iré relatando y ayudando a tod"
+    "excerpt": "Alzando el vuelo con Casti 1 es el honor de publicar en la plataforma de Una Mujer Cualquiera, donde mujeres como nosotras dejan su testimonio para ayudar a otras, donde iré relatando y ayudando a tod",
+    "image": "img/2023/09/Captura-de-Pantalla-2023-09-21-a-las-12.40.17.png"
   },
   {
     "title": "El PODER de las EMOCIONES.",
@@ -481,7 +596,8 @@
       "Herramientas",
       "Valores"
     ],
-    "excerpt": "El poder de las emociones en directo junto con Eli Pabon Zabala."
+    "excerpt": "El poder de las emociones en directo junto con Eli Pabon Zabala.",
+    "image": "img/2023/09/Captura-de-Pantalla-2023-10-04-a-las-16.23.58-965x1024.png"
   },
   {
     "title": "Coaching Pro Live 2023.",
@@ -491,7 +607,8 @@
     "categories": [
       "Conferencias"
     ],
-    "excerpt": "Coaching Pro Live 2023. Despegar Consciente: Claves para disfrutar de una expatriación plena"
+    "excerpt": "Coaching Pro Live 2023. Despegar Consciente: Claves para disfrutar de una expatriación plena",
+    "image": "img/2023/09/Captura-de-Pantalla-2023-09-18-a-las-14.54.21-1024x607.png"
   },
   {
     "title": "VALORES Y CREENCIAS",
@@ -502,7 +619,8 @@
       "Herramientas",
       "Valores"
     ],
-    "excerpt": "Todas las personas tenemos unos valores y creencias. Las últimas están generadas de nuestras experiencias en la vida, de las personas con las que nos relacionamos y cómo nos relacionamos."
+    "excerpt": "Todas las personas tenemos unos valores y creencias. Las últimas están generadas de nuestras experiencias en la vida, de las personas con las que nos relacionamos y cómo nos relacionamos.",
+    "image": "img/2023/05/fondos_5-1024x341.jpg"
   },
   {
     "title": "¡HOLA! BIENVENIDOS VIAJEROS",
@@ -513,7 +631,8 @@
       "Family",
       "Personal"
     ],
-    "excerpt": "En estas líneas quiero ir compartiendo con todos reflexiones e ideas entorno al crecimiento personal, enfocándome en mis vivencias como expatriada desde hace 14 años."
+    "excerpt": "En estas líneas quiero ir compartiendo con todos reflexiones e ideas entorno al crecimiento personal, enfocándome en mis vivencias como expatriada desde hace 14 años.",
+    "image": "img/2023/05/pexels-vidal-balielo-jr-1682497-1024x683.jpg"
   },
   {
     "title": "EVOLUCIÓN HUMANA VS CRECIMIENTO PERSONAL",
@@ -525,6 +644,7 @@
       "Family",
       "Herramientas"
     ],
-    "excerpt": "Evolución humana VS Crecimiento personal son píldoras os iré escribiendo sobre el crecimiento personal desde mis conocimientos como life coach y experiencia como mamá de familia expatriada desde hace "
+    "excerpt": "Evolución humana VS Crecimiento personal son píldoras os iré escribiendo sobre el crecimiento personal desde mis conocimientos como life coach y experiencia como mamá de familia expatriada desde hace ",
+    "image": "img/2023/05/pexels-victor-freitas-772662-1024x1536.jpg"
   }
 ]
