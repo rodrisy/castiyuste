@@ -897,27 +897,29 @@ h1, h2, h3, h4, h5 {
 .logos-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
   justify-content: flex-start;
   margin-top: 1.5rem;
 }
 
+/* Pills, not circles: these hold institution names of very uneven length
+   ("ASESCO" vs "Univ. Politécnica Cartagena"). A fixed circle forced 0.6rem
+   type and still cramped the long ones; letting each hug its own content
+   keeps type legible and the rows tidy. */
 .logo-badge {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0.4rem 0.95rem;
+  border-radius: 999px;
   background: var(--white);
   border: 1px solid var(--peach-mid);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   font-weight: 700;
+  letter-spacing: 0.02em;
   color: var(--text-mid);
-  text-align: center;
-  padding: 8px;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 /* ============================================
@@ -2050,6 +2052,205 @@ footer {
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 22px 55px rgba(0, 0, 0, 0.45);
+}
+
+/* ===========================================================
+   ABOUT PAGE — editorial components
+   =========================================================== */
+
+/* Dark split hero: portrait beside the intro copy. Unlike .hero-dark
+   (centred, video-led) this one is asymmetric and photo-led. */
+.about-hero {
+  background: var(--ink);
+  color: var(--on-ink);
+  padding: clamp(2.6rem, 5vw, 4.2rem) 0 clamp(3rem, 6vw, 4.6rem);
+}
+
+.about-hero-split {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.about-hero h1 {
+  color: var(--on-ink);
+  margin: 0.7rem 0 1.1rem;
+  /* This headline is a full sentence (~110 chars), not a 3-word display
+     line, so it steps down from .display's scale to stay readable. */
+  font-size: clamp(1.5rem, 2.9vw, 2.3rem);
+  line-height: 1.22;
+  max-width: 22ch;
+}
+
+.about-hero-lede {
+  color: var(--on-ink-dim);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 48ch;
+  margin-bottom: 1.6rem;
+}
+
+.about-hero-figure {
+  position: relative;
+}
+
+.about-hero-figure img {
+  width: 100%;
+  /* Source is a tall 2:3 portrait; uncapped it pushes the hero past the
+     viewport. Crop to a controlled ratio, biased upward to keep the face. */
+  aspect-ratio: 4 / 5;
+  max-height: 560px;
+  object-fit: cover;
+  object-position: center 22%;
+  border-radius: 10px;
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* For heroes whose art is a landscape photo rather than a portrait, and
+   whose headline is short — the tall crop above would leave a large void
+   in the text column. */
+.about-hero-figure.wide img {
+  aspect-ratio: 3 / 2;
+  max-height: 420px;
+  object-position: center center;
+}
+
+.about-hero-split.balanced { align-items: center; }
+
+/* Script signature over the portrait's lower corner */
+.about-hero-figure .sig {
+  position: absolute;
+  right: -6px;
+  bottom: 22px;
+  font-family: var(--font-script);
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  color: var(--cream);
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.65);
+  pointer-events: none;
+}
+
+/* --- Numbers strip --- */
+/* --- Story split: photo + prose, alternating sides --- */
+.story-split {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+/* .reverse flips column order so consecutive story blocks alternate. */
+.story-split.reverse .story-media { order: 2; }
+
+.story-media img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.16);
+}
+
+.story-body p {
+  color: var(--text-mid);
+  margin-bottom: 1rem;
+}
+
+.story-body p:last-child { margin-bottom: 0; }
+
+/* Pull-quote used between story beats */
+/* --- Photo trio --- */
+.photo-trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.photo-trio figure {
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.14);
+}
+
+.photo-trio img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Horizontal numbered process row --- */
+.steps-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(1.4rem, 3vw, 2.4rem);
+}
+
+.steps-row .step-num {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.steps-row h4 {
+  font-size: 1.02rem;
+  line-height: 1.3;
+  margin: 0 0 0.4rem;
+  color: var(--text);
+}
+
+.steps-row p {
+  color: var(--text-mid);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- Credentials layout --- */
+.creds-split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.creds-media img {
+  width: 100%;
+  /* Capped so the photo column stays roughly level with the credentials
+     list beside it rather than running ~350px past it. */
+  aspect-ratio: 4 / 5;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 900px) {
+  .about-hero-split,
+  .story-split,
+  .creds-split { grid-template-columns: 1fr; }
+
+  .about-hero-split { gap: 2.2rem; }
+  .about-hero h1 { max-width: none; }
+
+  /* Photo first on mobile regardless of desktop ordering */
+  .story-split.reverse .story-media { order: 0; }
+
+  .photo-trio { grid-template-columns: 1fr; }
+
+  .steps-row { grid-template-columns: repeat(2, 1fr); gap: 1.8rem 1.2rem; }
+}
+
+@media (max-width: 560px) {
+  .steps-row { grid-template-columns: 1fr; }
+
+  .about-hero-figure .sig { right: 10px; bottom: 14px; }
 }
 
 /* --- Sticky circular badge --- */
