@@ -45,10 +45,24 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Active nav link — compare file names so ../blog.html matches blog.html,
-  // and treat any article under /posts/ as belonging to Blog.
+  // and map section pages back to the menu item that owns them: any article
+  // under /posts/ belongs to Blog, and the coaching destinations belong to
+  // Coaching (they have no menu entry of their own since the dropdown went).
+  const COACHING_PAGES = [
+    'coaching.html',
+    'coaching-personal.html',
+    'coaching-grupal.html',
+    'coaching-empresas.html',
+    'programa.html',
+    'mi-metodo.html'
+  ];
+
   const inPosts = window.location.pathname.includes('/posts/');
   const currentFile = window.location.pathname.split('/').pop() || 'index.html';
-  const target = inPosts ? 'blog.html' : currentFile;
+
+  let target = currentFile;
+  if (inPosts) target = 'blog.html';
+  else if (COACHING_PAGES.includes(currentFile)) target = 'coaching.html';
 
   document.querySelectorAll('.nav-links a').forEach(link => {
     const file = (link.getAttribute('href') || '').split('/').pop();
@@ -121,6 +135,34 @@ document.addEventListener('DOMContentLoaded', function () {
       frame.appendChild(player);
     });
   }
+
+  // El badge flotante es un «empieza por aquí»: en la página a la que apunta
+  // no haría nada, así que se retira en lugar de quedarse como control muerto.
+  const badge = document.querySelector('.badge-fab');
+  if (badge) {
+    const dest = (badge.getAttribute('href') || '').split('/').pop();
+    if (dest && dest === currentFile) badge.remove();
+  }
+
+  // Reseñas — «Leer más» sólo cuando el texto se está recortando de verdad,
+  // así una reseña corta no muestra un botón que no hace nada.
+  document.querySelectorAll('.review-card').forEach(card => {
+    const text = card.querySelector('.review-text');
+    const btn = card.querySelector('.review-more');
+    if (!text || !btn) return;
+
+    if (text.scrollHeight <= text.clientHeight + 2) {
+      btn.remove();
+      text.classList.remove('clamped');
+      return;
+    }
+
+    btn.addEventListener('click', () => {
+      const collapsed = text.classList.toggle('clamped');
+      btn.textContent = collapsed ? 'Leer más' : 'Leer menos';
+      btn.setAttribute('aria-expanded', String(!collapsed));
+    });
+  });
 
   // Newsletter form
   const nlForm = document.querySelector('.newsletter-form');
