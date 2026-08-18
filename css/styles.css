@@ -1289,9 +1289,20 @@ footer {
   width: 160px;
   flex-shrink: 0;
   height: 220px;
-  background: linear-gradient(135deg, #b5cca5, #8aaa76);
   border-radius: 4px;
   box-shadow: 6px 6px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+.book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fallback only: kept for any card that ends up without a real cover. */
+.book-cover.placeholder {
+  background: linear-gradient(135deg, #b5cca5, #8aaa76);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1652,9 +1663,31 @@ footer {
   font-size: 1rem;
 }
 
+/* Wraps .video-frame so the glow can extend past the frame's own
+   overflow:hidden (needed there for the rounded video corners). */
+.video-glow {
+  position: relative;
+}
+
+/* Ambient-light glow: the poster image itself, enlarged and heavily
+   blurred behind the frame, so the glow colour matches the video
+   instead of an arbitrary brand colour. */
+.video-glow-bg {
+  position: absolute;
+  inset: -60px;
+  z-index: 0;
+  width: calc(100% + 120px);
+  height: calc(100% + 120px);
+  object-fit: cover;
+  filter: blur(90px) saturate(1.6) brightness(0.9);
+  opacity: 0.75;
+  pointer-events: none;
+}
+
 /* 16:9 click-to-play frame */
 .video-frame {
   position: relative;
+  z-index: 1;
   max-width: 880px;
   margin: 0 auto;
   aspect-ratio: 16 / 9;
@@ -2144,6 +2177,12 @@ footer {
 
 .story-media img {
   width: 100%;
+  /* Tope para que un retrato vertical no estire la sección muy por encima
+     de su columna de texto. El recorte va sesgado hacia arriba para no
+     cortar caras. Las fotos que ya caben por debajo del tope no se tocan. */
+  max-height: 700px;
+  object-fit: cover;
+  object-position: center 20%;
   border-radius: 8px;
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.16);
 }
@@ -2402,6 +2441,14 @@ footer {
   margin-bottom: 0.8rem;
 }
 
+/* Variante de dos columnas para rejillas con sólo dos elementos. Va como
+   clase y no como estilo en línea: en línea ganaría a las media queries y
+   la rejilla nunca colapsaría en móvil. */
+.offer-grid.cols-2,
+.rutas.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /* --- Lista de beneficios en dos columnas --- */
 .benefits-list {
   list-style: none;
@@ -2446,6 +2493,17 @@ footer {
   line-height: 1.3;
   color: var(--on-ink);
   margin: 0 0 1rem;
+}
+
+/* Light-background variant: .quote-block defaults to cream text sized for
+   dark .feature-dark sections. Talleres embeds one quote inside a normal
+   cream/peach section, where that same cream-on-cream would be invisible. */
+.quote-block.on-light blockquote {
+  color: var(--text);
+}
+
+.quote-block.on-light cite {
+  color: var(--accent-text);
 }
 
 .quote-block cite {
@@ -2577,6 +2635,55 @@ footer {
   color: var(--green-text);
 }
 
+/* ===========================================================
+   TALLERES — índice rápido + secciones por taller
+   =========================================================== */
+
+/* Lista de salto rápido a los 4 talleres, mostrada tras la intro. */
+.taller-index {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+}
+
+.taller-index li { border-top: 1px solid var(--peach-mid); }
+.taller-index li:last-child { border-bottom: 1px solid var(--peach-mid); }
+
+.taller-index a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 0.2rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.taller-index a:hover,
+.taller-index a:focus-visible { color: var(--accent-text); }
+
+.taller-index a .ir {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-text);
+  white-space: nowrap;
+}
+
+/* Subtítulo corto bajo el h2 de cada taller. */
+.taller-tagline {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--accent-text);
+  margin: 0.3rem 0 1.3rem;
+}
+
 /* --- Horizontal numbered process row --- */
 .steps-row {
   display: grid;
@@ -2646,7 +2753,11 @@ footer {
 
   .steps-row { grid-template-columns: repeat(2, 1fr); gap: 1.8rem 1.2rem; }
 
-  .offer-grid { grid-template-columns: 1fr; }
+  /* Estas dos van aquí, después de que .cols-2 quede definida más arriba:
+     con la misma especificidad, manda la que aparece más tarde. */
+  .offer-grid,
+  .offer-grid.cols-2,
+  .rutas.cols-2 { grid-template-columns: 1fr; }
   .testimonials-2 { grid-template-columns: 1fr; }
   .benefits-list { columns: 1; }
 }
