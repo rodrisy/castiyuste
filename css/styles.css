@@ -1674,12 +1674,12 @@ footer {
    instead of an arbitrary brand colour. */
 .video-glow-bg {
   position: absolute;
-  inset: -60px;
+  inset: -40px;
   z-index: 0;
-  width: calc(100% + 120px);
-  height: calc(100% + 120px);
+  width: calc(100% + 80px);
+  height: calc(100% + 80px);
   object-fit: cover;
-  filter: blur(90px) saturate(1.6) brightness(0.9);
+  filter: blur(150px) saturate(1.6) brightness(0.9);
   opacity: 0.75;
   pointer-events: none;
 }
