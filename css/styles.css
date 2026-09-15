@@ -28,8 +28,8 @@
 
   /* Dark "ink" scale — warm browns pulled from --text, for the
      dark editorial sections (hero, book block, footer). */
-  --ink: #2b2420;
-  --ink-soft: #3a322c;
+  --ink: #5a4032;
+  --ink-soft: #634736;
   --ink-line: rgba(253, 246, 242, 0.14);
   --on-ink: #f5ebe4;
   --on-ink-dim: rgba(245, 235, 228, 0.66);
@@ -897,29 +897,26 @@ h1, h2, h3, h4, h5 {
 .logos-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 22px;
   align-items: center;
   justify-content: flex-start;
   margin-top: 1.5rem;
 }
 
-/* Pills, not circles: these hold institution names of very uneven length
-   ("ASESCO" vs "Univ. Politécnica Cartagena"). A fixed circle forced 0.6rem
-   type and still cramped the long ones; letting each hug its own content
-   keeps type legible and the rows tidy. */
-.logo-badge {
-  display: inline-flex;
-  align-items: center;
-  min-height: 34px;
-  padding: 0.4rem 0.95rem;
-  border-radius: 999px;
-  background: var(--white);
-  border: 1px solid var(--peach-mid);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: var(--text-mid);
-  line-height: 1.25;
+/* Institution logo marks. Each keeps its own natural aspect ratio —
+   only capped by max-height/max-width so a wide wordmark and a
+   square crest both sit at a similar visual size without either
+   being stretched or clipped. Selector is deliberately specific to
+   win over the generic ".creds-media img" portrait-photo rule
+   (width:100%, aspect-ratio:4/5, object-fit:cover) that these logos
+   also sit under in the DOM. */
+.logos-grid img.logo-badge {
+  width: auto;
+  height: auto;
+  max-height: 54px;
+  max-width: 170px;
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
 /* ============================================
